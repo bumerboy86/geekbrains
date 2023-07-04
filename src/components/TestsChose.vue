@@ -9,21 +9,19 @@
         <p class="text">Средний</p>
         <p class="text">JS</p>
       </router-link>
-<!--      <a class="javascriptLink" href="/javascript-light" >-->
-<!--        <img src="../assets/book-bookmark.svg" alt="LightTest" class="item-image"/>-->
-<!--        <p class="text">Начальный</p>-->
-<!--        <p class="text">JS</p>-->
-<!--      </a>-->
-      <a href="/javascript-middle" class="javascriptLink">
+
+      <router-link to="/javascript-middle"  class="javascriptLink">
         <img src="../assets/book-bookmark.svg" alt="MiddleTest" class="item-image"/>
         <p class="text">Средний</p>
         <p class="text">JS</p>
-      </a>
-      <a href="/javascript-strong" class="javascriptLink">
-        <img src="../assets/book-bookmark.svg" alt="StrongTest" class="item-image"/>
+      </router-link>
+
+      <router-link to="/javascript-strong"  class="javascriptLink">
+        <img src="../assets/book-bookmark.svg" alt="MiddleTest" class="item-image"/>
         <p class="text">Сложный</p>
         <p class="text">JS</p>
-      </a>
+      </router-link>
+
     </div>
   </div>
 </template>
