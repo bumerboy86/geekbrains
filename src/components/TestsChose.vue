@@ -4,17 +4,17 @@
     <p>Обновлено 29 июня 2023 г. Добавлен интерактивный поиск вопросов, темы тестирования открываются по клику</p>
     <p>JavaScript: легкий-35, средний-39, сложный-67 вопрос/ответов</p>
     <div class="box">
-      <a class="javascriptLink" href="/geekbrains/javascript-light" >
+      <a class="javascriptLink" href="/javascript-light" >
         <img src="../assets/book-bookmark.svg" alt="LightTest" class="item-image"/>
         <p class="text">Начальный</p>
         <p class="text">JS</p>
       </a>
-      <a href="/geekbrains/javascript-middle" class="javascriptLink">
+      <a href="/javascript-middle" class="javascriptLink">
         <img src="../assets/book-bookmark.svg" alt="MiddleTest" class="item-image"/>
         <p class="text">Средний</p>
         <p class="text">JS</p>
       </a>
-      <a href="/geekbrains/javascript-strong" class="javascriptLink">
+      <a href="/javascript-strong" class="javascriptLink">
         <img src="../assets/book-bookmark.svg" alt="StrongTest" class="item-image"/>
         <p class="text">Сложный</p>
         <p class="text">JS</p>
