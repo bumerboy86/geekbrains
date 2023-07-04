@@ -4,11 +4,16 @@
     <p>Обновлено 29 июня 2023 г. Добавлен интерактивный поиск вопросов, темы тестирования открываются по клику</p>
     <p>JavaScript: легкий-35, средний-39, сложный-67 вопрос/ответов</p>
     <div class="box">
-      <a class="javascriptLink" href="/javascript-light" >
-        <img src="../assets/book-bookmark.svg" alt="LightTest" class="item-image"/>
-        <p class="text">Начальный</p>
+      <router-link to="/javascript-light"  class="javascriptLink">
+        <img src="../assets/book-bookmark.svg" alt="MiddleTest" class="item-image"/>
+        <p class="text">Средний</p>
         <p class="text">JS</p>
-      </a>
+      </router-link>
+<!--      <a class="javascriptLink" href="/javascript-light" >-->
+<!--        <img src="../assets/book-bookmark.svg" alt="LightTest" class="item-image"/>-->
+<!--        <p class="text">Начальный</p>-->
+<!--        <p class="text">JS</p>-->
+<!--      </a>-->
       <a href="/javascript-middle" class="javascriptLink">
         <img src="../assets/book-bookmark.svg" alt="MiddleTest" class="item-image"/>
         <p class="text">Средний</p>
