@@ -33,7 +33,6 @@ a {
 #main {
   max-width: 1420px;
   margin: 0 auto;
-  border: 1px solid #2c3e50;
   padding: 50px 0;
 }
 nav {
