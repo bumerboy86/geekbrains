@@ -84,7 +84,7 @@ export default {
   cursor: pointer;
 }
 .wrappedBox {
-  background: #42b983;
+  background: #90c8dd;
   border-radius: 10px;
   padding-top: 20px;
 }

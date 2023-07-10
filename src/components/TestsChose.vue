@@ -33,9 +33,15 @@ export default {
 </script>
 
 <style scoped>
+.chose {
+  display: flex;
+  flex-direction: column;
+}
 .box {
   display: flex;
   gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .javascriptLink {
@@ -54,12 +60,6 @@ export default {
 
 .text {
   margin: 0 0 5px 0;
-}
-
-.box {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 </style>

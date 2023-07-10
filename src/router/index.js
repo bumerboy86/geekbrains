@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
+import TestsChose from "../components/TestsChose.vue";
+import TestPage from "../views/TestPage.vue";
+import AboutView from "../views/AboutView.vue";
+import TestPageMiddle from "@/views/TestPageMiddle.vue";
+import TestPageLight from "@/views/TestPageLight.vue";
 
 const routes = [
   {
@@ -8,24 +13,29 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/tests',
+    name: 'tests',
+    component: TestsChose
+  },
+  {
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: AboutView
   },
   {
     path: '/javascript-strong',
     name: 'javascript-strong',
-    component: () => import(/* webpackChunkName: "javascript-strong" */ '../views/TestPage.vue')
+    component: TestPage
   },
   {
     path: '/javascript-middle',
     name: 'javascript-middle',
-    component: () => import(/* webpackChunkName: "javascript-middle" */ '../views/TestPageMiddle.vue')
+    component: TestPageMiddle
   },
   {
     path: '/javascript-light',
     name: 'javascript-light',
-    component: () => import(/* webpackChunkName: "javascript-middle" */ '../views/TestPageLight.vue')
+    component: TestPageLight
   }
 ]
 
