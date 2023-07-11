@@ -37,11 +37,12 @@ export default {
   flex-direction: column;
 }
 .box {
-  display: flex;
-  gap: 20px;
+  display: grid;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-template-columns: auto auto auto;
+  box-sizing: border-box;
+  gap: 20px;
+  padding-bottom: 35px;
 }
 
 .javascriptLink {
@@ -75,4 +76,15 @@ export default {
   margin: 0
 }
 
+@media screen and (max-width: 900px) {
+  .box {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .box {
+    grid-template-columns: auto;
+  }
+}
 </style>

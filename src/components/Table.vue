@@ -34,7 +34,7 @@ export default {
   }
 
   th {
-    background-color: #cbc9c9;
+    background-color: #FFB359;
     text-align: center;
   }
 </style>
