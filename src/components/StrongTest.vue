@@ -77,14 +77,14 @@ export default {
 
 <style scoped>
 .themeBox {
-  background: #2c3e50;
+  background: #50C0FF;
   color: #ffffff;
   text-align: start;
   padding: 20px 29px;
   cursor: pointer;
 }
 .wrappedBox {
-  background: #50C0FF;
+  background: #EAF2F5;
   border-radius: 10px;
   padding-top: 20px;
 }
