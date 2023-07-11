@@ -21,21 +21,44 @@ export default {
     </router-link>
     <nav>
       <transition mode="out-in" name="burger__menu">
-        <button @click="toggleMenu" class="main__menu_box_burger">&#9776;</button>
+        <button @click="toggleMenu" class="main__menu_box_burger" v-if="!isMenuOpen">&#9776;</button>
       </transition>
-      <div class="main__menu_backdrop" v-if="isMenuOpen" @click="toggleMenu"/>
-      <transition mode="out-in" name="burger__menu_links" >
-        <menu class="main__menu_box_nav" v-if="isMenuOpen">
+      <transition name="expand" >
+        <div class="main__menu_box_nav" :class="{ 'menu-open': isMenuOpen }" v-if="isMenuOpen">
+          <button @click="toggleMenu" class="main__menu_exit" v-if="isMenuOpen">x</button>
           <router-link to="/" @click="toggleMenu" class="main__menu_box_link">Главная</router-link>
           <router-link to="/tests" @click="toggleMenu" class="main__menu_box_link" >К тестам</router-link>
           <router-link to="/about" @click="toggleMenu" class="main__menu_box_link">О нас</router-link>
-        </menu>
+        </div>
       </transition>
     </nav>
   </header>
 </template>
 
 <style>
+  .expand-enter-from {
+    opacity: 0;
+    transform: translateX(3000px);
+  }
+  .expand-enter-to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .expand-enter-active {
+    transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .expand-leave-from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .expand-leave-to {
+    opacity: 0;
+    transform: translateX(3000px);
+  }
+  .expand-leave-active {
+    transition: all 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
 header {
   display: flex;
   max-width: 1180px;
@@ -44,6 +67,7 @@ header {
   align-content: center;
   justify-content: space-between;
 }
+
 nav {
   display: flex;
   position: relative;
@@ -54,10 +78,6 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   color: #22253B;
-}
-
-.main__menu_box {
-  position: relative;
 }
 
 .main__menu_box_burger {
@@ -75,22 +95,33 @@ nav a {
 }
 
 .main__menu_box_nav {
-  position: absolute;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
   display: flex;
   gap: 20px;
   flex-direction: column;
-  min-width: 150px;
-  min-height: 89px;
-  padding: 20px 0;
-  right: 4px;
-  top: 14px;
-  border-radius: 10px 0 10px;
+  padding: 80px 0;
   margin: 0;
   background: #ffffff;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   z-index: 6;
+  overflow: hidden;
+}
+.main__menu_exit {
+  position: absolute;
+  color: #8E8E8E;
+  font-size: 30px;
+  font-weight: bolder;
+  top: 25px;
+  right: 50px;
+  border: none;
+  background: inherit;
+  z-index: 7;
 }
 
 .main__menu_box_link {
@@ -99,16 +130,5 @@ nav a {
 
 .logo {
   width: 140px;
-}
-
-.main__menu_backdrop {
-  position: fixed;
-  background: #2c3e50;
-  opacity: 0.7;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 4;
 }
 </style>

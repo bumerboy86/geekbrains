@@ -31,7 +31,6 @@
     rgb(234, 242, 245) 100%
   );
   padding: 30px 0;
-  margin-bottom: 100px;
 }
 
 .home__text {
