@@ -26,7 +26,7 @@ a {
 #main {
   max-width: 1420px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 0 0 50px;
   position: relative;
   min-height: 90vh;
 }

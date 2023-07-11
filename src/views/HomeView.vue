@@ -7,7 +7,6 @@
 
 <style scoped>
 .home {
-  padding: 50px 0;
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
