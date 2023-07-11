@@ -6,7 +6,7 @@
     <div class="box">
       <router-link to="/javascript-light"  class="javascriptLink">
         <img src="../assets/book-bookmark.svg" alt="MiddleTest" class="item-image"/>
-        <p class="text">Средний</p>
+        <p class="text">Начальный</p>
         <p class="text">JS</p>
       </router-link>
 
