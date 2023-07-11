@@ -17,12 +17,12 @@
     <KeywordSearchInput @handleInput="sortByKeyword"/>
     <Table>
       <template v-slot:default>
-        <test-item
-        v-for="(test, index) in filteredTests"
-        :key="test.id"
-        :test_data="test"
-        :index_data="index + 1"
-        />
+          <test-item
+          v-for="(test, index) in filteredTests"
+          :key="test.id"
+          :test_data="test"
+          :index_data="index + 1"
+          />
       </template>
     </Table>
   </div>

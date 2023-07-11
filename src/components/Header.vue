@@ -45,7 +45,7 @@ export default {
     transform: translateX(0);
   }
   .expand-enter-active {
-    transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1.5s cubic-bezier(.04, .39,.44,.94);
   }
   .expand-leave-from {
     opacity: 1;
@@ -56,7 +56,7 @@ export default {
     transform: translateX(3000px);
   }
   .expand-leave-active {
-    transition: all 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1.5s cubic-bezier(.68, .39,.44,.94);
   }
 
 header {
